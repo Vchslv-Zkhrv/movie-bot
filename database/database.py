@@ -16,7 +16,5 @@ from config import environment as _env
 engine = _create_async_engine(_env.db_connect_url)
 Base = _delarative_base()
 Session = _sessionmaker(
-    engine=engine,
-    class_= _AsyncSession,
-    expire_on_commit=False
+    engine=engine, class_=_AsyncSession, expire_on_commit=False
 )

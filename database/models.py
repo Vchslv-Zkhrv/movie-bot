@@ -9,9 +9,9 @@ from datetime import datetime as _dt
 import sqlalchemy as _sa
 from sqlalchemy import orm as _orm
 
-from .database import Base as _Base
 import schemas as _schemas
 
+from .database import Base as _Base
 
 
 class User(_Base):

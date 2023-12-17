@@ -7,8 +7,8 @@ import typing as _t
 
 from sqlalchemy.ext.asyncio import AsyncSession as _AsyncSession
 
-from . import models as _models  # without this import metadata will be empty
 from . import database as _db
+from . import models as _models  # without this import metadata will be empty
 
 
 async def get_session() -> _t.AsyncGenerator[_AsyncSession, None]:

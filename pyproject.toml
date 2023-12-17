@@ -15,6 +15,7 @@ asyncpg = "^0.29.0"
 sqlalchemy = {extras = ["asyncio"], version = "^2.0.23"}
 aiosqlite = "^0.19.0"
 pydantic = "^2.5.2"
+punq = "^0.7.0"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.5.0"
