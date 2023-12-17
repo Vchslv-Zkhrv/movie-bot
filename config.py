@@ -3,8 +3,8 @@ from dotenv import dotenv_values as _dotenv_values
 
 import api as _api
 import schemas as _schemas
-from api.ivi import api as _ivi
-from api.kinopoisk import api as _kinopoisk
+from api import ivi as _ivi
+from api import kinopoisk as _kinopoisk
 
 
 env = _schemas.Environment(**_dotenv_values(".env"))  # pyright: ignore
