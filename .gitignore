@@ -1,0 +1,5 @@
+.venv
+.nvimrc
+.env
+__pycache__
+
