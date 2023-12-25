@@ -3,7 +3,7 @@ from pydantic import BaseModel as _Base
 
 class _Schema(_Base):
     class Config:
-        orm_mode = True
+        from_attributes = True
         arbitrary_types_allowed = True
 
 

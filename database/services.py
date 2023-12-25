@@ -24,4 +24,5 @@ async def init_models() -> None:
         await connection.run_sync(_db.Base.metadata.create_all)
 
 
-print(_models)
+if __name__ == "__main__":
+    print(_models)

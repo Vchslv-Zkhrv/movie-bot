@@ -59,5 +59,8 @@ class UserHistory(_Base):
     succeeded: _orm.Mapped[bool] = _orm.mapped_column(
         _sa.Boolean, nullable=False, index=True
     )
+    api: _orm.Mapped[_schemas.ApiName] = _orm.mapped_column(
+        _sa.Enum(_schemas.ApiName), nullable=True
+    )
 
     user: _orm.Mapped["User"] = _orm.relationship(back_populates="history")

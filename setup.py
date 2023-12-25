@@ -15,7 +15,7 @@ def main():
 
 
 if __name__ == "__main__":
-    if "--init-models" in _sys.argv:
+    if "--init-models" in _sys.argv or "-M" in _sys.argv:
         if "y" in input("Are you shure? (y/n) ").lower():
             _asyncio.run(_db.services.init_models())
     else:

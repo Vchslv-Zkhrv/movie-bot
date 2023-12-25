@@ -19,3 +19,8 @@ class Environment(_BaseModel):
     telegram_token: str = _Field(alias="TELEGRAM_TOKEN")
     api_token: str = _Field(alias="API_TOKEN")
     api_name: ApiName = _Field(alias="API_NAME")
+
+
+class BotCommand(_Enum):
+    start = "start"
+    history = "history"
